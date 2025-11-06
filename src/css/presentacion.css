@@ -1,0 +1,76 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+header {
+  border: 2px solid red;
+  margin-top: 0.5rem;
+  /* background-color: blueviolet; */
+}
+main {
+  border: 2px solid blue;
+}
+footer {
+  border: 2px solid green;
+}
+.navbarheader {
+  background-color: rgba(29, 131, 221, 0);
+  border-radius: 2rem;
+  background-color: rgba(0, 0, 0, 0.938);
+}
+.navbar a {
+  color: aliceblue;
+  font-size: 11px;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+a:hover {
+  transition: 0.5s;
+  transform: translateY(-2px);
+  color: red;
+  background-color: rgb(245, 245, 245);
+  border-radius: 1rem;
+  font-size: 11px;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+.Logo {
+  /* Necesitamos que sea 'relative' para que las imágenes 'absolute' se queden dentro */
+  position: relative;
+
+  /* IMPORTANTE: Debes darle el tamaño de tus imágenes */
+  width: 50px; /* Ajusta esto al ancho de tu logo */
+  height: 50px; /* Ajusta esto al alto de tu logo */
+
+  /* Esto ayuda a centrar las imágenes si tienen tamaños ligeramente diferentes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  /* Opcional: si quieres centrar el DIV del logo en la navbar */
+  /* margin: 0 auto; */
+}
+.Logo img {
+  /* Hacemos que ambas imágenes se pongan una encima de la otra */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  /* ¡LA MAGIA! Definimos la transición de 1 segundo para la opacidad */
+  transition: 0.2s ease-in-out;
+}
+.Logo .logo-blanco {
+  opacity: 1; /* La blanca se ve */
+}
+.Logo .logo-negro {
+  opacity: 0; /* La negra está oculta (totalmente transparente) */
+    background-color: aliceblue;
+     transition: 0.7s ease-in-out;
+     border-radius: 100%;
+}
+
+/* 4. Estado :hover (al pasar el cursor sobre el DIV) */
+.Logo:hover .logo-blanco {
+  opacity: 0; /* La blanca se desvanece */
+}
+.Logo:hover .logo-negro {
+  opacity: 1; /* La negra aparece */
+}
