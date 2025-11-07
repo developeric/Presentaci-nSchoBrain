@@ -1,33 +1,30 @@
 * {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+body {
+  background-image: url(../img/asdasd.jpg);
+  padding-top: 1rem;
+}
 header {
-  border: 2px solid red;
-  margin-top: 0.5rem;
+  position: fixed;
+  margin-top: 10px;
   /* background-color: blueviolet; */
 }
-main {
-  border: 2px solid blue;
-}
-footer {
-  border: 2px solid green;
-}
 .navbarheader {
-  background-color: rgba(29, 131, 221, 0);
+  background-color: rgba(255, 255, 255, 0.27);
+  backdrop-filter: blur(5px);
   border-radius: 2rem;
-  background-color: rgba(0, 0, 0, 0.938);
 }
 .navbar a {
-  color: aliceblue;
+  color: black;
   font-size: 11px;
   font-family: Verdana, Tahoma, sans-serif;
 }
 a:hover {
-  transition: 0.5s;
-  transform: translateY(-2px);
-  color: red;
-  background-color: rgb(245, 245, 245);
-  border-radius: 1rem;
+  transition: 0.5s ease-in-out;
+  transform: translateY(-5px);
+  background-color: rgba(245, 245, 245, 0.233);
+  border-radius: 0.5rem;
   font-size: 11px;
   font-family: Verdana, Tahoma, sans-serif;
 }
@@ -62,9 +59,9 @@ a:hover {
 }
 .Logo .logo-negro {
   opacity: 0; /* La negra está oculta (totalmente transparente) */
-    background-color: aliceblue;
-     transition: 0.7s ease-in-out;
-     border-radius: 100%;
+  background-color: aliceblue;
+  transition: 0.7s ease-in-out;
+  border-radius: 100%;
 }
 
 /* 4. Estado :hover (al pasar el cursor sobre el DIV) */
@@ -74,3 +71,22 @@ a:hover {
 .Logo:hover .logo-negro {
   opacity: 1; /* La negra aparece */
 }
+#LogIn {
+  animation: ;
+  margin-left:66.4vw;
+  margin-right: 1rem;
+  /* border: 1px solid red; */
+}
+#LogUp {
+  margin-left: 0;
+  margin-right: 0;
+  /* border: 1px solid red; */
+}
+
+main {
+  margin-top:15vh;
+}
+footer {
+  border: 2px solid blue;
+}
+
